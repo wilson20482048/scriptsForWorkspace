@@ -16,6 +16,6 @@ if [ $odp == "b" ]; then
 exit 1
 fi
 
-$gam csv $fullPath gam create group ~gr name ~name allowexternalmembers off spammoderationlevel allow whocanadd all_$$gam csv $fullPath gam create alias ~alias group ~gr
+$gam csv $fullPath gam create group ~gr name ~name allowexternalmembers off spammoderationlevel allow whocanadd all_$$gam csv $fullPath gam create alias ~alias group ~gr gal off
 $gam csv $fullPath gam update group ~gr add manager ~mngr
 $gam csv $fullPath gam update group ~gr add member ~mmbr
