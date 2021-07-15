@@ -6,7 +6,8 @@ targetFolder=/root/tmp/
 file=new
 fullPath=$targetFolder$file".csv"
 
-$gam user michal.wilas get drivefile 1ISDBT9K7SNBeSyUvFBiazKKm1SOEzHUslQXhqMR6yis csvsheet .create targetfolder $tar$
+$gam user michal.wilas get drivefile 1ISDBT9K7SNBeSyUvFBiazKKm1SOEzHUslQXhqMR6yis csvsheet .create targetfolder $targetFolder targetname $file
+
 iu=$(wc -l $fullPath | cut -d " " -f 1)
 echo "$iu groups to create, (c)ontinue or (b)reak?"
 read odp
