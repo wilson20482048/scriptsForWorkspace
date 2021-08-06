@@ -9,7 +9,7 @@ read copyFrom
 echo "Target email address:"
 read copyTo
 echo "Label of restored emails:"
-read label
+read labelrm
 
 $gam user @arch get drivefile name $copyFrom".tar.gz"
 tar -zxvf /root/Downloads/$copyFrom".tar.gz" -C /
