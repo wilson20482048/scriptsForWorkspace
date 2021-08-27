@@ -17,7 +17,7 @@ idr="1rC0DSKnZ_vT7EMlMcJ8zY7F8ysEMdfm3I4JBPb4dWJM"
 idwf="1dSZ3q7ZVh_KNtmlF306I9k-GMaTmX7TW"
 
 rm $fp > /dev/null 2>&1
-$gam user $usr get drivefile $idr csvsheet delete targetfolder $tmp targetname $fn
+$gam user $usr get drivefile $idr csvsheet .delete targetfolder $tmp targetname $fn
 mv $fp $fpm
 
 cat -A $fpm | tr -d "^M$" > $fp
